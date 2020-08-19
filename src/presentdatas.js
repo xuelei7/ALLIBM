@@ -1,7 +1,6 @@
-var dataURL = "../data/clickdata.csv";
 
 //CSVファイルを読み込む関数getCSV()の定義
-function getCSV(){
+function getCSV(dataURL){
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     req.open("get", dataURL, true); // アクセスするファイルを指定
     req.send(null); // HTTPリクエストの発行
@@ -23,8 +22,23 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
     for(var i=0;i<tmp.length;++i){
         result[i] = tmp[i].split(',');
     }
-    console.log("here");
+
     return result;
 }
- 
-getCSV(); //最初に実行される
+
+function makeData(arr) {
+    //読み込むファイルの場所
+    var dataURL = "../data/clickdata.csv";
+    //サンプリングする間隔
+    var timegroup = 500;
+    var raw = getCSV(dataURL);
+    var count = [];
+    for (var i = 0; i < raw.length; i++) {
+        var rec = raw[i];
+        var time = Number(rec[0]);
+        var reaction = Number(rec[1]);
+        var id = Number(rec[2]);
+        count[reaction][time/500]++;
+    }
+    console.log(count[1][0]);
+}
