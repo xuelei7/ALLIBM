@@ -4,13 +4,23 @@
     <meta charset="utf-8">
     <title>Welcome to IBM</title>
     <link rel="stylesheet" href="../stylesheet/stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 </head>
 <body>
-    <h1>企業様マイページ</h1>
+    <canvas id="stage"></canvas>
+    <input type="file" onchange="fileChanged(this)" multiple/>
+
+
+    <h1>企業ページ（データ分析画面）</h1>
+    
+
+    <div class="aggregategraph">
+        
+    </div>
 
     <a href="mypage.html">企業ページへ</a>
-
     <!--スクリプト読み込み-->
     <script src="../src/main.js"></script>
+    <script src="../src/presentdatas.js"></script>
 </body>
 </html>
