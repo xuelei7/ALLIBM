@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <title>Welcome to IBM</title>
     <link rel="stylesheet" href="../stylesheet/stylesheet.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 </head>
 <body>
-    <canvas id="stage"></canvas>
+    <canvas id="LineChart"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
-    <h1>企業ページ（データ分析画面）</h1>
+    <h1>企業ページ（折れ線グラフ）</h1>
     
     <div class="aggregategraph">
-        
+        <script>
+            makeGraph();
+        </script>
     </div>
 
     <a href="mypage.html">企業ページへ</a>

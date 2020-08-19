@@ -1,4 +1,3 @@
-
 //CSVファイルを読み込む関数getCSV()の定義
 function getCSV(dataURL){
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
@@ -32,6 +31,11 @@ function makeData(arr) {
     //サンプリングする間隔
     var timegroup = 500;
     var raw = getCSV(dataURL);
+    console.log("raw data: ");
+    console.log(raw);
+
+
+    //reactionごと，時間ごとのカウント
     var count = [];
     for (var i = 0; i < raw.length; i++) {
         var rec = raw[i];
@@ -41,4 +45,58 @@ function makeData(arr) {
         count[reaction][time/500]++;
     }
     console.log(count[1][0]);
+}
+
+//グラフ
+function makeGraph() {
+    var ctx = document.getElementById("LineChart");
+    var myLineChart = new Chart(ctx, {type: 'line',
+    data: {
+        labels: ['0:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00'],
+        datasets: [
+        {
+            label: 'OK',
+            data: [35, 34, 37, 35, 34, 35, 34, 25],
+            borderColor: "rgba(255,0,0,1)",
+            backgroundColor: "rgba(0,0,0,0)"
+        },
+        {
+            label: 'NG',
+            data: [25, 27, 27, 25, 26, 27, 25, 21],
+            borderColor: "rgba(0,0,255,1)",
+            backgroundColor: "rgba(0,0,0,0)"
+        },
+        {
+            label: '?',
+            data: [0,3,6,8,22,17,0,0],
+            borderColor: "rgba(0,255,0,1)",
+            backgroundColor: "rgba(0,0,0,0)"
+        },
+        {
+            label: 'smile',
+            data: [13,50,12,15,9,39,40],
+            borderColor: "rgba(255,255,0,1)",
+            backgroundColor: "rgba(0,0,0,0)"
+        }
+        ],
+    },
+    options: {
+        title: {
+        display: true,
+        text: '学生反応集計データ'
+        },
+        scales: {
+        yAxes: [{
+            ticks: {
+            suggestedMax: 40,
+            suggestedMin: 0,
+            stepSize: 10,
+            callback: function(value, index, values){
+                return  value +  '回'
+            }
+            }
+        }]
+        },
+    }
+    });
 }

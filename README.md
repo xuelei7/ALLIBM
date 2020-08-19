@@ -12,7 +12,8 @@ page link: https://xuelei7.github.io/ALLIBM/pages/index.html
 - mypage.html：企業向けホームぺージ
 - register.html, login.html: 情報登録，ログイン用
 - crossroad.html: 分岐点
-- cafeteria.html: 食堂（対話など用？）
+- place1.html, place2.html: 通路
+- person1.html, person2.html: 対話など用場所
 - meetingroom.html: 会議室（説明会用）
 - button?heat.html: ヒートマップ
 - comments.html: コメントをひょうじする
