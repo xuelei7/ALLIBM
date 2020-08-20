@@ -186,18 +186,18 @@ header {
     display:  inline-block;
 }
 .tooltip img{
-    width: 80px;
+    width: 150px;
 }
 .description {
     display: none;
     position: absolute;
-    padding: 10px;
-    font-size: 12px;
+    padding: 30px;
+    font-size: 20px;
     line-height: 1.6em;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     background: #000;
-    width: 100px;
+    width: 150px;
 }
 
 .description:before {
