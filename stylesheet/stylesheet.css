@@ -1,15 +1,3 @@
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-a {
-  text-align: center;
-}
-
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
@@ -26,14 +14,22 @@ a {
   margin: 0 auto;
 }
 
-.top-wrapper {
+.top-wrapper-entrance {
   padding: 180px 0 100px 0;
   background-image: url(../img/entrance.jpg);
   background-size: cover;
   color: white;
-  /* text-alignをcenterに指定してください */
   text-align: center;
 }
+
+.top-wrapper-normal {
+  padding: 20px 0 100px 0;
+  background-image: url(../img/normalbackground.jpg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
 
 .top-wrapper h1 {
   opacity: 0.7;
@@ -78,7 +74,70 @@ a {
 .btn-wrapper {
   margin: 20px 0;
 }
-
+.btn-wrapper-register {
+  margin: 20px;
+}
 .btn-wrapper p {
   margin: 10px 0;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* positionプロパティをfixedに、topを0に指定してください */
+  /* position: fixed;
+  top: 0;
+   */
+  /* z-indexを10に指定してください */
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left1 {
+  float: left;
+  margin-top: 10px;
+  transition: all 0.5s;
+  color: rgba(24,160,251,1);
+}
+
+.header-left1:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-right {
+  float: right;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+.header-left1 a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: black;
+  display: block;
+}
+
+.register {
+  padding: 0 300px;
+  text-align: left;
 }
