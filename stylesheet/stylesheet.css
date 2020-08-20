@@ -198,7 +198,6 @@ header {
     border-radius: 15px;
     background:#fff;
     width: 150px;
-    opacity : 0.5;
 }
 
 .description:before {
@@ -214,4 +213,5 @@ header {
     display: inline-block;
     top: -75px;
     left: -50px;
+    opacity : 0.5;
 }
