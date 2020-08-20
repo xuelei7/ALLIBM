@@ -194,9 +194,9 @@ header {
     padding: 50px;
     font-size: 15px;
     line-height: 1.6em;
-    color: #fff;
+    color: #000;
     border-radius: 15px;
-    background:#000;
+    background:#fff;
     width: 150px;
 }
 
