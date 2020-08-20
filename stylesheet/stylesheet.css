@@ -194,9 +194,9 @@ header {
     padding: 50px;
     font-size: 15px;
     line-height: 1.6em;
-    color: #fff;
+    color: #000;
     border-radius: 15px;
-    background:rgba(,0,255,0.20);
+    background:#fff;
     width: 150px;
 }
 
@@ -213,6 +213,7 @@ header {
     display: inline-block;
     top: -75px;
     left: -50px;
+    opacity: 0.5;
 }
 
 .unfinished {
