@@ -49,8 +49,6 @@ function makeData() {
     console.log(count[1][0]);
 }
 
-makeData();
-
 //グラフ
 function makeGraph(result) {
     var ctx = document.getElementById("LineChart");
