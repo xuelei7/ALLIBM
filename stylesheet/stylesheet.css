@@ -214,3 +214,9 @@ header {
     top: -75px;
     left: -50px;
 }
+
+.unfinished {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
