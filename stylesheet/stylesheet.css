@@ -186,7 +186,7 @@ header {
     display:  inline-block;
 }
 .tooltip img{
-    width: 150px;
+    width: 100px;
 }
 .description {
     display: none;
