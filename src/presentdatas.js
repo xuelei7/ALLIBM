@@ -3,10 +3,11 @@ function getCSV(dataURL){
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     req.open("get", dataURL, true); // アクセスするファイルを指定
     req.send(null); // HTTPリクエストの発行
-	
+    console.log("sent null");
     // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
     req.onload = function(){
-    	convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
+        console.log("get response");
+        convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
     }
 }
  
@@ -21,11 +22,12 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
     for(var i=0;i<tmp.length;++i){
         result[i] = tmp[i].split(',');
     }
-
+    console.log("result");
+    console.log(result)
     return result;
 }
 
-function makeData(arr) {
+function makeData() {
     //読み込むファイルの場所
     var dataURL = "../data/clickdata.csv";
     //サンプリングする間隔
@@ -42,13 +44,15 @@ function makeData(arr) {
         var time = Number(rec[0]);
         var reaction = Number(rec[1]);
         var id = Number(rec[2]);
-        count[reaction][time/500]++;
+        count[reaction][time/timegroup]++;
     }
     console.log(count[1][0]);
 }
 
+makeData();
+
 //グラフ
-function makeGraph() {
+function makeGraph(result) {
     var ctx = document.getElementById("LineChart");
     var myLineChart = new Chart(ctx, {type: 'line',
     data: {
@@ -76,6 +80,12 @@ function makeGraph() {
             label: 'smile',
             data: [13,50,12,15,9,39,40],
             borderColor: "rgba(255,255,0,1)",
+            backgroundColor: "rgba(0,0,0,0)"
+        },
+        {
+            label: 'viewers',
+            data: [700,500,400,500,600,400,800],
+            borderColor: "rgba(0,255,255,1)",
             backgroundColor: "rgba(0,0,0,0)"
         }
         ],
