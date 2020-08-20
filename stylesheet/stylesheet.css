@@ -21,24 +21,64 @@ a {
   color: white;
   text-align: center;
 }
-
-.top-wrapper-normal {
-  padding: 20px 0 100px 0;
-  background-image: url(../img/normalbackground.jpg);
-  background-size: cover;
-  color: black;
-  text-align: center;
-}
-
-
-.top-wrapper h1 {
+.top-wrapper-entrance h1 {
   opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
 }
 
-.top-wrapper p {
+.top-wrapper-normal {
+  padding: 60px 0 100px 0;
+  background-image: url(../img/normalbackground.jpg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+  height: 500px;
+}
+.top-wrapper-normal h1 {
   opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper-liveview {
+  padding: 20px 0 100px 0;
+  background-image: url(../img/normalbackground.jpg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+  height: 540px;
+}
+.top-wrapper-liveview h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+.top-wrapper-place1 {
+  padding: 180px 0 100px 0;
+  background-image: url(../img/place1.png);
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+.top-wrapper-place1 h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+
+.top-wrapper-place2 {
+  padding: 180px 0 100px 0;
+  background-image: url(../img/place2.png);
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+.top-wrapper-place2 h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
 }
 
 .btn {
@@ -75,7 +115,8 @@ a {
   margin: 20px 0;
 }
 .btn-wrapper-register {
-  margin: 20px;
+  margin: 20px 0;
+  text-align: center;
 }
 .btn-wrapper p {
   margin: 10px 0;
@@ -85,12 +126,9 @@ header {
   height: 90px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  /* positionプロパティをfixedに、topを0に指定してください */
   /* position: fixed;
   top: 0;
-   */
-  /* z-indexを10に指定してください */
-  z-index: 10;
+  z-index: 10; */
 }
 
 .logo {

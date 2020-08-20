@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ALL IBM</title>
+	<link rel="stylesheet" href="../stylesheet/liveview.css">
+	<link rel="stylesheet" href="../stylesheet/stylesheet.css">
+</head>
+<body>
+	<header>
+        <div class="container">
+          <div class="header-left">
+            <a href="index.html"><img class="logo" src="../img/logo.png"></a>
+          </div>
+          <div class="header-left1">
+            <a href="LiveView.html" class="login">Online Session</a>
+          </div>
+          <div class="header-left1">
+            <a href="#" class="login">Work in IBM</a>
+          </div>
+          <div class="header-left1">
+            <a href="mypage.html" class="login">My Page</a>
+          </div>
+          <div class="header-left1">
+            <a href="#" class="login">Support</a>
+          </div>
+          <div class="header-right">
+            <a href="#" class="login">マイページ</a>
+          </div>
+        </div>
+	</header>
+	<div class="top-wrapper-liveview">
+    <h1>LiveView</h1>
+    <main>
+        <div class="content-area">
+			<div class="boxA">
+				<div class="content1">
+					<p>LIVE映像</p>
+						<div class="video">
+							<iframe 
+								width="560" 
+								height="315" 
+								src="https://www.youtube.com/embed/ghWfQVhdgeg" 
+								frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen>
+							</iframe>
+						</div>
+				</div>
+			</div>
+			<div class="boxA">
+				<div class="content2">
+					<p>スタンプ</p>
+					<div class="boxA">
+						<a href="#" class="button1"  id="btn_count_ok">GOOD</a>
+						<a href="#" class="button2" id="btn_count_ng">BAD</a>
+						<a href="#" class="button3" id="btn_count_q">?</a>
+						
+					</div>
+				</div>
+				<div class="content2">
+					
+					<div class="containerchat">
+					   <div class="chat-area" id="log"></div>
+					   <div class="message-area">
+						 <div class="message-area-text">
+						 
+						   <textarea id="text"></textarea>
+						 </div>
+						 <div class="message-area-button">
+						   <button id="send" class="disabled-button">送信</button>
+						 </div>
+						
+					   </div>
+					 </div>
+				</div>
+			</div>
+        </div>
+		</div>
+    </main>
+</body>
+	
+	<!-- <a href="#" id="btn_finish">csv</a>
+	<div id="disp_count_ok">0</div>
+	<div id="disp_count_ng">0</div>
+	<div id="disp_count_q">0</div>
+	 -->
+	<!--スクリプト読み込み-->
+    <script src="../src/counter.js"></script>
+	<script style="text-align: center;" type="text/javascript" src="../src/jquery.js"></script>
+</body>
+</html>

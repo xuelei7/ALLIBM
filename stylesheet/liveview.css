@@ -1,0 +1,165 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 70px;
+    background-color: #eee;
+    text-align: center;
+}
+main{
+    display: flex;
+    /* min-height: 100vh; */
+    margin: 10px 0 10px 0;
+    right: 0px;
+}
+.content-area{
+    display: flex;
+    flex: 1;
+}
+.content1{
+    flex:1;
+    height: 400px;
+    background-color: #eee;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+.content2{
+    flex:1;
+    height: 200px;
+    background-color: #eee;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+.localNavigation{
+    text-align: center;
+    background-color: #888;
+    color: #fff;
+    width: 250px;
+}
+.footer{
+    height: 70px;
+    text-align: center;
+    background-color: #eee;
+}
+.boxA {
+  border: none;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.button1{
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.button1:hover {
+  background: #007fff;
+}
+
+
+.box1, .box2, .box3, .box4 {
+  float: left;
+  width: 25%;
+}
+
+.button2{
+  display: inline-block;
+  text-decoration: none;
+  background: #ff8ec6;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.button2:hover {
+  background: #ff007f;
+}
+.button3 {
+  display: inline-block;
+  text-decoration: none;
+  background: #7fff7f;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.button3:hover {
+  background: #00ff7f;
+}
+.button4 {
+  display: inline-block;
+  text-decoration: none;
+  background: #ffbf7f;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.button4:hover {
+  background: #ff7f00;
+}
+
+.containerchat {
+     width: 80%;
+     margin: 10px auto;
+   }
+
+
+.chat-area {
+  height: 150px;
+  background: #8DB4E5;
+  overflow: scroll
+}
+
+.message-area {
+ height: 10vh;
+ display: flex;
+}
+
+/* テキストエリアは80%で表示 */
+.message-area-text {
+ width: 80%;
+}
+
+/* テキストエリアは20%で表示 */
+.message-area-button {
+ width: 20%;
+}
+
+.message-area-text textarea {
+ width: 100%;
+ height: 80%;
+ resize: none; /* これでユーザーのリサイズをできなくする */
+ border: 1px solid #ddd; /* 枠線をつけて領域を分かりやすく */
+ box-sizing: border-box; /* borderを付けてるので、border込の大きさにする */
+}
+
