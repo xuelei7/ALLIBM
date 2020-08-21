@@ -10,24 +10,29 @@ body{
 main{
     display: flex;
     /* min-height: 100vh; */
-    margin-left:auto;
-    margin-right:auto;
+    /* margin-left:auto;
+    margin-right:auto;*/
+    text-align: center;
+    margin: 0 auto;
 }
+
 .content-area{
     display: flex;
     flex: 1;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .content1{
     flex:1;
     height: 400px;
-    background-color: #eee;
+    background-color:rgba(255,255,255,0.4);
     text-align: center;
     margin: 0 10px 0 10px;
 }
 .content2{
     flex:1;
     height: 200px;
-    background-color: #eee;
+    background-color:rgba(255,255,255,0.4);
     text-align: center;
     margin: 0 10px 0 10px;
 }
@@ -135,13 +140,13 @@ main{
 
 
 .chat-area {
-  height: 150px;
+  min-height: 150px;
   background: #8DB4E5;
   overflow: scroll
 }
 
 .message-area {
- height: 10vh;
+ min-height: 5vh;
  display: flex;
 }
 
