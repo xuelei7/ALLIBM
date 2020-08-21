@@ -75,7 +75,7 @@ function makeGraph(result) {
             backgroundColor: "rgba(0,0,0,0)"
         },
         {
-            label: 'smile',
+            label: 'chat',
             data: [13,50,12,15,9,39,40],
             borderColor: "rgba(255,255,0,1)",
             backgroundColor: "rgba(0,0,0,0)"
